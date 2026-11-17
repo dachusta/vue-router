@@ -57,7 +57,7 @@ const routes = [
     redirect: to => {
       // функция получает в качестве аргумента конечный маршрут
       // относительное местоположение не начинается с `/`
-      return 'profile'
+      return to.path.replace(/posts$/, 'profile')
     },
   },
 ]
